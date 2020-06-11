@@ -1,0 +1,19 @@
+.content{	
+	min-width: 800px;
+	padding: 40px 200px 40px 200px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.container{
+	padding-bottom: 20px;
+	display: flex;
+	margin: auto;
+	text-align: left;
+	line-height: 20px;
+	height: 450px;
+	display: block;
+}
+.container img{
+	border-radius: 10px;	
+}

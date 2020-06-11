@@ -1,0 +1,113 @@
+body{	
+	font-size: 18px;
+}
+.content{	
+	min-width: 800px;
+	padding: 40px 200px 40px 200px;
+	text-align: justify;
+}
+.content h1, h2, h3, h4, h5{
+	text-align: center;
+}
+
+/*Преимущества-------------------------------*/
+.advantages{
+	padding-bottom: 20px;
+	display: flex;
+	margin: auto;
+}
+.advantages img{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*-----------------------------------*/
+.cell{
+	padding: 5px 20px 10px 20px;
+}
+
+/*ОТЗЫВЫ-------------------------------*/
+.review{
+	padding-bottom: 20px;
+	display: flex;
+	margin: auto;
+}
+.review img{
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;	
+	display: block;
+	border: #393E41 solid 2px;
+	border-radius: 150px;
+}
+
+
+
+/*Слайдер------------------------------*/
+.container{
+	width: 620px;
+	margin: 40px auto;
+	overflow: auto;
+}
+
+.description {
+	margin-left: 20px;
+	font-weight: bold;
+	color: #393E41;
+	text-decoration: none;
+}
+.link{
+	font-style: italic;
+	font-weight: normal;
+	color: #393E41;
+}
+
+.slider-inner{
+	margin-top: 10px; 
+	width: 584px;
+	height: 390px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 3px;
+	border-radius: 15px;
+	border:#393E41 solid 2px;
+}
+.slider-inner img{
+	border-radius: 17px;
+	display: none;
+	width: 584px;
+	height: 390px;
+}
+.slider-inner img.active{
+	display: inline-block;
+	cursor: pointer;
+}
+
+.prev, .next{
+	float: left;
+	margin-top: 160px;
+	cursor: pointer;
+}
+
+.prev{
+	position: relative;
+	margin-right: -45px;
+	z-index: 100; 
+	/*Если элементы в одном месте, 
+	один отображается поверх другого, 
+	если у него выше z-index*/
+}
+
+.next{
+	position: relative;
+	margin-left: -45px;
+	z-index: 100;
+}
+
+
+

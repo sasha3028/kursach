@@ -1,0 +1,88 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	background: #F6F7EB;	
+	color: #393E41;
+}
+
+.header{
+	padding: 20px 40px 20px 20px;
+	border-radius: 15px; 
+	background: #393E41;
+	color: #F6F7EB; 
+	font-size: 18px;	
+	display: flex;
+	height: 50px;
+}
+.logo {
+	padding: 8px;
+	border-radius: 15px; 
+	font-size: 26px;
+	background:#FFE74C;
+	color: #000807;
+	cursor: default;
+}
+.phoneNum{
+	padding: 8px;
+	font-size: 26px;
+	margin-left: auto;	
+}
+
+.navMenu{
+	margin-left: 10px; /*выравниваем меню*/	
+	margin-top: 15px;	
+	list-style: none; /*убираем маркеры списка*/
+	padding-left: 0; /*убираем отступы*/	
+	
+}
+/*Кнопки навигационного меню*/
+.navMenu li{
+	float:left; /*Размещаем список горизонтально для реализации меню*/
+	margin-right:5px; /*Добавляем отступ у пунктов меню*/
+}
+.navMenu a{
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	padding: 5px; /*добавляем отступ между элементами меню*/
+	border-radius: 10px; /*добавляем скругление*/	
+	color: #F6F7EB;
+}
+/*Изменение цвета кнопок и текста в них навигации при наведении*/		
+.navMenu a:hover{	
+	transition: 0.3s;
+	background:#FFE74C;
+	color: #000807;
+}
+.footer{
+	padding: 10px;
+	float: right;
+	font-size: 14px;
+	color: #393E41;
+}
+
+/*Кнопка скролла вверх*/
+.topButton{
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	/*Выравниваем содержимое по центру кнопки*/
+	text-align: center;
+  	line-height: 35px;
+	background:#FFE74C;
+	color: #000807;
+	/*Фиксируем позицию относительно страницы и задаем координаты расположения*/
+	position: fixed;
+	bottom: 80px;
+	right: 40px;
+	border-radius: 4px;
+	font-size: 18px;
+	transition-duration: 0.3s;
+	opacity: 0;
+  	visibility: hidden;
+}
+.topButton:hover{
+	background: #393E41;
+	color: #F6F7EB; 
+}
+.topButtonShowed{
+	opacity: 1;
+  	visibility: visible;
+}
